@@ -11,7 +11,8 @@ src/main.o: ../src/main.cpp ../src/LongestSubStringOfKUnique.h \
   ../src/RotateMatrix.h ../src/MinStepsToExit.h ../src/TripletSum.h \
   ../src/SmallestDifference.h ../src/QuickSelect.h \
   ../src/FourNumberSum.h ../src/MaxIncreasingSubsequenceSum.h \
-  ../src/RiverSizes.h ../src/PaintFill.h ../src/CollatzSequence.h
+  ../src/RiverSizes.h ../src/PaintFill.h ../src/CollatzSequence.h \
+  ../src/BT_BottomView.h
 
 ../src/LongestSubStringOfKUnique.h:
 
@@ -82,3 +83,5 @@ src/main.o: ../src/main.cpp ../src/LongestSubStringOfKUnique.h \
 ../src/PaintFill.h:
 
 ../src/CollatzSequence.h:
+
+../src/BT_BottomView.h:

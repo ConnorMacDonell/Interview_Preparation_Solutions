@@ -9,7 +9,6 @@
 #include <iostream>
 #include <algorithm>
 #include <cmath>
-#include <queue>
 
 #include "LongestSubStringOfKUnique.h"
 #include "BinaryStringPrinter.h"
@@ -46,12 +45,31 @@
 #include "MaxIncreasingSubsequenceSum.h"
 #include "RiverSizes.h"
 #include "CollatzSequence.h"
+#include "BT_BottomView.h"
 
 
 int main(){
-	int longest = longestCollatz();
 
-	std::cout << longest << std::endl;
+	//BottomView Test Case
+	bt_node* root = makeNode(5);
+	root -> leftChild = makeNode(3);
+	root -> leftChild -> leftChild = makeNode(1);
+	root -> leftChild -> leftChild -> leftChild = makeNode(0);
+	root -> leftChild -> rightChild = makeNode(4);
+	root -> rightChild = makeNode(7);
+	root -> rightChild -> rightChild = makeNode(9);
+	root -> rightChild -> leftChild = makeNode(6);
+	root -> rightChild -> rightChild -> leftChild = makeNode(8);
+
+	std::vector<int> bottomViewVect = bottomView(root);
+
+	for(int i = 0; i < bottomViewVect.size(); ++i){
+		std::cout << bottomViewVect[i] << " ";
+	}
+	std::cout << std::endl;
+	destroyTree(root);
+
+
 
 
 	/*//RiverSizes Test Case
@@ -556,73 +574,3 @@ int main(){
 	return {left, right};
 }*/
 
-int simpleHash(const std::string& str);
-bool rabinKarp(const std::string& big, const std::string& small);
-bool compareStrings(std::queue<char> window, const std::string& small);
-
-std::vector<bool> multiStringSearch(std::string bigString,
-															 std::vector<std::string> smallStrings) {
-	if(bigString.empty() || smallStrings.empty()){
-		throw std::invalid_argument("Invalid parameters: multiStringSearch");
-	}
-
-	std::vector<bool> result = {};
-
-	for(int i = 0; i < smallStrings.size(); ++i){
-		result.push_back(rabinKarp(bigString, smallStrings[i]));
-	}
-
-	return result;
-
-}
-
-int simpleHash(const std::string& str){
-	int x = 53;
-	int hash = 1;
-	for(int i = 0; i < str.size(); ++i){
-		hash = hash * x + str[i];
-	}
-	return hash;
-}
-
-bool rabinKarp(const std::string& big, const std::string& small){
-	std::queue<char> window;
-	std::string start = std::substr(big.begin(), small.size());
-	int smallHash = simpleHash(small);
-	int bigHash = simpleHash(start);
-
-	for(int i = 0; i < small.size(); ++i){
-		queue.push(big[i]);
-	}
-
-	for(int i = small.size(); i < big.size(); ++i){
-		if(smallHash == bigHash){
-			if(compareStrings(window, small)){
-				return true;
-			}
-		}
-		window.pop_front();
-		window.push(big[i]);
-		bigHash -= big[i - small.size()];
-		bigHash += big[i];
-	}
-
-	if(smallHash == bigHash){
-		if(compareStrings(window, small)){
-			return true;
-		}
-	}
-	return false;
-}
-
-bool compareStrings(std::queue<char> window, const std::string& small){
-	for(int i = 0; i < small.size(); ++i){
-		if(window.front() != small[i]){
-			return false;
-		}
-		else{
-			window.pop_front();
-		}
-	}
-	return true;
-}
