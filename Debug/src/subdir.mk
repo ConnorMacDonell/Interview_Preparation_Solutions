@@ -8,6 +8,7 @@ CPP_SRCS += \
 ../src/BT_BottomView.cpp \
 ../src/BT_FreqSubTreeSum.cpp \
 ../src/BT_IsSubTree.cpp \
+../src/BT_LCA.cpp \
 ../src/BT_LevelList.cpp \
 ../src/BT_MergeBST.cpp \
 ../src/BT_Node.cpp \
@@ -28,6 +29,7 @@ CPP_SRCS += \
 ../src/LL_IsPalindrome.cpp \
 ../src/LL_LoopDetection.cpp \
 ../src/LL_Pivot.cpp \
+../src/LargestRange.cpp \
 ../src/LinkedList.cpp \
 ../src/LongestSubStringOfKUnique.cpp \
 ../src/MaxIncreasingSubsequenceSum.cpp \
@@ -59,6 +61,7 @@ OBJS += \
 ./src/BT_BottomView.o \
 ./src/BT_FreqSubTreeSum.o \
 ./src/BT_IsSubTree.o \
+./src/BT_LCA.o \
 ./src/BT_LevelList.o \
 ./src/BT_MergeBST.o \
 ./src/BT_Node.o \
@@ -79,6 +82,7 @@ OBJS += \
 ./src/LL_IsPalindrome.o \
 ./src/LL_LoopDetection.o \
 ./src/LL_Pivot.o \
+./src/LargestRange.o \
 ./src/LinkedList.o \
 ./src/LongestSubStringOfKUnique.o \
 ./src/MaxIncreasingSubsequenceSum.o \
@@ -110,6 +114,7 @@ CPP_DEPS += \
 ./src/BT_BottomView.d \
 ./src/BT_FreqSubTreeSum.d \
 ./src/BT_IsSubTree.d \
+./src/BT_LCA.d \
 ./src/BT_LevelList.d \
 ./src/BT_MergeBST.d \
 ./src/BT_Node.d \
@@ -130,6 +135,7 @@ CPP_DEPS += \
 ./src/LL_IsPalindrome.d \
 ./src/LL_LoopDetection.d \
 ./src/LL_Pivot.d \
+./src/LargestRange.d \
 ./src/LinkedList.d \
 ./src/LongestSubStringOfKUnique.d \
 ./src/MaxIncreasingSubsequenceSum.d \
