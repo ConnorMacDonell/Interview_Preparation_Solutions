@@ -33,6 +33,7 @@ CPP_SRCS += \
 ../src/LinkedList.cpp \
 ../src/LongestSubStringOfKUnique.cpp \
 ../src/MaxIncreasingSubsequenceSum.cpp \
+../src/MaxProfitKTransactions.cpp \
 ../src/MergeIntervals.cpp \
 ../src/MergeSort.cpp \
 ../src/MinStack.cpp \
@@ -87,6 +88,7 @@ OBJS += \
 ./src/LinkedList.o \
 ./src/LongestSubStringOfKUnique.o \
 ./src/MaxIncreasingSubsequenceSum.o \
+./src/MaxProfitKTransactions.o \
 ./src/MergeIntervals.o \
 ./src/MergeSort.o \
 ./src/MinStack.o \
@@ -141,6 +143,7 @@ CPP_DEPS += \
 ./src/LinkedList.d \
 ./src/LongestSubStringOfKUnique.d \
 ./src/MaxIncreasingSubsequenceSum.d \
+./src/MaxProfitKTransactions.d \
 ./src/MergeIntervals.d \
 ./src/MergeSort.d \
 ./src/MinStack.d \
