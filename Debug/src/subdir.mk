@@ -8,6 +8,7 @@ CPP_SRCS += \
 ../src/BT_BottomView.cpp \
 ../src/BT_FreqSubTreeSum.cpp \
 ../src/BT_IsSubTree.cpp \
+../src/BT_IterativeInOrder.cpp \
 ../src/BT_LCA.cpp \
 ../src/BT_LevelList.cpp \
 ../src/BT_MergeBST.cpp \
@@ -63,6 +64,7 @@ OBJS += \
 ./src/BT_BottomView.o \
 ./src/BT_FreqSubTreeSum.o \
 ./src/BT_IsSubTree.o \
+./src/BT_IterativeInOrder.o \
 ./src/BT_LCA.o \
 ./src/BT_LevelList.o \
 ./src/BT_MergeBST.o \
@@ -118,6 +120,7 @@ CPP_DEPS += \
 ./src/BT_BottomView.d \
 ./src/BT_FreqSubTreeSum.d \
 ./src/BT_IsSubTree.d \
+./src/BT_IterativeInOrder.d \
 ./src/BT_LCA.d \
 ./src/BT_LevelList.d \
 ./src/BT_MergeBST.d \
