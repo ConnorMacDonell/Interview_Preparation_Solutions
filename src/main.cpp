@@ -46,10 +46,23 @@
 #include "RiverSizes.h"
 #include "CollatzSequence.h"
 #include "BT_BottomView.h"
+#include "PrintCombs.h"
 
 
 int main(){
 
+
+	/*//PrintCombs Test Case
+	std::vector<int> input;
+	input.push_back(1);
+	input.push_back(2);
+	input.push_back(3);
+	input.push_back(4);
+	input.push_back(5);
+	input.push_back(6);
+	input.push_back(7);
+
+	printCombs(input, 7);*/
 
 
 	/*//BottomView Test Case

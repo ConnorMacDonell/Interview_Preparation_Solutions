@@ -44,6 +44,7 @@ CPP_SRCS += \
 ../src/MinimumSemesters.cpp \
 ../src/PaintFill.cpp \
 ../src/PowerSet.cpp \
+../src/PrintCombs.cpp \
 ../src/PrintParenPairs.cpp \
 ../src/PrintPerms.cpp \
 ../src/PrintWords.cpp \
@@ -101,6 +102,7 @@ OBJS += \
 ./src/MinimumSemesters.o \
 ./src/PaintFill.o \
 ./src/PowerSet.o \
+./src/PrintCombs.o \
 ./src/PrintParenPairs.o \
 ./src/PrintPerms.o \
 ./src/PrintWords.o \
@@ -158,6 +160,7 @@ CPP_DEPS += \
 ./src/MinimumSemesters.d \
 ./src/PaintFill.d \
 ./src/PowerSet.d \
+./src/PrintCombs.d \
 ./src/PrintParenPairs.d \
 ./src/PrintPerms.d \
 ./src/PrintWords.d \
