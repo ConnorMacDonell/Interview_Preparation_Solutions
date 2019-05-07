@@ -37,6 +37,7 @@ CPP_SRCS += \
 ../src/MaxProfitKTransactions.cpp \
 ../src/MergeIntervals.cpp \
 ../src/MergeSort.cpp \
+../src/MinRewards.cpp \
 ../src/MinStack.cpp \
 ../src/MinStepsToExit.cpp \
 ../src/MinimumPartitionDifference.cpp \
@@ -93,6 +94,7 @@ OBJS += \
 ./src/MaxProfitKTransactions.o \
 ./src/MergeIntervals.o \
 ./src/MergeSort.o \
+./src/MinRewards.o \
 ./src/MinStack.o \
 ./src/MinStepsToExit.o \
 ./src/MinimumPartitionDifference.o \
@@ -149,6 +151,7 @@ CPP_DEPS += \
 ./src/MaxProfitKTransactions.d \
 ./src/MergeIntervals.d \
 ./src/MergeSort.d \
+./src/MinRewards.d \
 ./src/MinStack.d \
 ./src/MinStepsToExit.d \
 ./src/MinimumPartitionDifference.d \

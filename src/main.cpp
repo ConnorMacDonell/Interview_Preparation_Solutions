@@ -50,7 +50,9 @@
 
 int main(){
 
-	//BottomView Test Case
+
+
+	/*//BottomView Test Case
 	bt_node* root = makeNode(5);
 	root -> leftChild = makeNode(3);
 	root -> leftChild -> leftChild = makeNode(1);
@@ -67,7 +69,7 @@ int main(){
 		std::cout << bottomViewVect[i] << " ";
 	}
 	std::cout << std::endl;
-	destroyTree(root);
+	destroyTree(root);*/
 
 
 
