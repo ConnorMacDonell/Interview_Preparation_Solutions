@@ -22,7 +22,7 @@
 
 void DFS(gr_node node, std::stack<std::pair<gr_node, int> >& nodeStack);
 
-std::stack<std::pair<gr_node, int> > topologicalSort(graph courses);
+std::stack<std::pair<gr_node, int> > topologicalSort(Graph courses);
 
 int minSemesters(std::stack<std::pair<gr_node, int> > nodeStack);
 

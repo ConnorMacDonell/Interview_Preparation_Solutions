@@ -21,7 +21,7 @@ void DFS(gr_node node, std::stack<std::pair<gr_node, int> >& nodeStack){
 	nodeStack.push(std::make_pair(node, -1));
 }
 
-std::stack<std::pair<gr_node, int> > topologicalSort(graph courses){
+std::stack<std::pair<gr_node, int> > topologicalSort(Graph courses){
 	if(courses.empty()){
 		throw std::invalid_argument("Graph is empty");
 	}

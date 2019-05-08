@@ -35,22 +35,30 @@ int gr_node::getValue(){
 	return value;
 }
 
-gr_node::gr_node(std::string name) : name(name), value(0), state(UNVISITED) {}
-
-
-
-void Graph::addNode(std::string name){
-	gr_node temp = gr_node(name);
-	nodes[name] = temp;
+gr_node::gr_node(std::string nme) : name(nme), value(0), state(UNVISITED) {
+	std::vector<gr_node> neighbors;
 }
 
 
-std::unordered_map<std::string, gr_node> Graph::getNodes(){
+
+void Graph::addNode(gr_node node){
+	nodes.push_back(node);
+}
+
+
+std::vector<gr_node> Graph::getNodes(){
 	return nodes;
 }
 
 void Graph::resetStates(){
-	for(std::unordered_map<std::string, gr_node>::iterator it = nodes.begin(); it != nodes.end(); ++it){
-		it -> second.setState(UNVISITED);
+	for(int i = 0; i < nodes.size(); ++i){
+		nodes[i].setState(UNVISITED);
 	}
+}
+
+bool Graph::empty(){
+	if(nodes.empty()){
+		return true;
+	}
+	return false;
 }

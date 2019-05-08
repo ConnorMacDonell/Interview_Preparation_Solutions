@@ -7,6 +7,7 @@
 
 #include <vector>
 #include <unordered_map>
+#include <string>
 
 #ifndef GRAPH_H_
 #define GRAPH_H_
@@ -24,23 +25,24 @@ public:
 	std::string getName();
 	state getState();
 	void setState(state set);
-	gr_node(std::string name) : name(name), value(0), state(UNVISITED) {}
+	gr_node(std::string name);
 	void setValue(int val);
 	int getValue();
 private:
-	std::string name;
 	std::vector<gr_node> neighbors;
-	state state;
+	std::string name;
 	int value;
+	state state;
 };
 
 class Graph{
 public:
-	void addNode(std::string name);
-	std::unordered_map<std::string, gr_node> getNodes();
+	void addNode(gr_node name);
+	std::vector<gr_node> getNodes();
 	void resetStates();
+	bool empty();
 private:
-	std::unordered_map<std::string, gr_node> nodes;
+	std::vector<gr_node> nodes;
 };
 
 
