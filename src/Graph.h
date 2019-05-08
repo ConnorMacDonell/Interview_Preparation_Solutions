@@ -6,37 +6,41 @@
  */
 
 #include <vector>
+#include <unordered_map>
 
 #ifndef GRAPH_H_
 #define GRAPH_H_
 
-	enum state{UNVISITED, VISITING, VISITED};
+	enum state{
+		UNVISITED,
+		VISITING,
+		VISITED
+	};
 
 class gr_node{
 public:
-	int getData();
-	void setData(int n);
-	state getState();
-	void setState(state st);
 	std::vector<gr_node> getNeighbors();
-	void addNeighbor(gr_node node);
-	gr_node(int data, std::vector<gr_node> neighbors);
+	void addEdge(gr_node node);
+	std::string getName();
+	state getState();
+	void setState(state set);
+	gr_node(std::string name) : name(name), value(0), state(UNVISITED) {}
+	void setValue(int val);
+	int getValue();
 private:
-	int data;
+	std::string name;
 	std::vector<gr_node> neighbors;
 	state state;
+	int value;
 };
 
-class graph{
+class Graph{
 public:
-	std::vector<gr_node> getNodes();
-	void addNode(gr_node a);
-	void delNode(gr_node a);
-	bool empty();
-	graph(std::vector<gr_node> nodes);
+	void addNode(std::string name);
+	std::unordered_map<std::string, gr_node> getNodes();
+	void resetStates();
 private:
-	std::vector<gr_node> nodes;
-
+	std::unordered_map<std::string, gr_node> nodes;
 };
 
 
