@@ -47,9 +47,25 @@
 #include "CollatzSequence.h"
 #include "BT_BottomView.h"
 #include "PrintCombs.h"
+#include "AlienLanguage.h"
 
 
 int main(){
+
+	//Alien Language Test Case
+	std::vector<std::string> dict;
+	dict.push_back("xww");
+	dict.push_back("wxyz");
+	dict.push_back("wxyw");
+	dict.push_back("ywx");
+	dict.push_back("ywz");
+
+	std::vector<std::pair<char, char> > rules = makeRules(dict);
+
+	for(int i = 0; i < rules.size(); ++i){
+		std::cout << rules[i].first << ", " << rules[i].second << std::endl;
+	}
+
 
 
 	/*//PrintCombs Test Case
