@@ -14,6 +14,7 @@
 #include <vector>
 #include <string>
 #include <utility>
+#include <unordered_set>
 
 #include "Graph.h"
 
@@ -25,7 +26,7 @@ std::vector<char> alienAlphabet(std::vector<std::string> dict);
 
 std::vector<std::pair<char, char> > makeRules(std::vector<std::string> dict);
 
-Graph makeGraph(std::vector<std::pair<char, char> > rules);
+Graph makeGraph(std::vector<std::pair<char, char> > rules, std::unordered_set<char> alienAlphabet);
 
 
 

@@ -25,9 +25,9 @@ public:
 	std::string getName();
 	state getState();
 	void setState(state set);
-	gr_node(std::string name);
 	void setValue(int val);
 	int getValue();
+	gr_node(std::string name);
 private:
 	std::vector<gr_node> neighbors;
 	std::string name;

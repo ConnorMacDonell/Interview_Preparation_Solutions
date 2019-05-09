@@ -8,6 +8,16 @@
 #include "AlienLanguage.h"
 
 std::vector<char> alienAlphabet(std::vector<std::string> dict){
+	std::vector<std::pair<char, char> > rules = makeRules(dict);
+	std::unordered_set<char> alienAlphabet;
+	for(int i = 0; i < rules.size(); ++i){
+		if(alienAlphabet.find(rules[i].first) == alienAlphabet.end()){
+			alienAlphabet.insert(rules[i].first);
+		}
+		if(alienAlphabet.find(rules[i].second) == alienAlphabet.end()){
+			alienAlphabet.insert(rules[i].second);
+		}
+	}
 
 }
 

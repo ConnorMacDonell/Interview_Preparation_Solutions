@@ -58,6 +58,7 @@ CPP_SRCS += \
 ../src/StabIntervals.cpp \
 ../src/SubArraySort.cpp \
 ../src/SurroundedGroups.cpp \
+../src/Trie.cpp \
 ../src/TripletSum.cpp \
 ../src/WordBreak.cpp \
 ../src/main.cpp 
@@ -117,6 +118,7 @@ OBJS += \
 ./src/StabIntervals.o \
 ./src/SubArraySort.o \
 ./src/SurroundedGroups.o \
+./src/Trie.o \
 ./src/TripletSum.o \
 ./src/WordBreak.o \
 ./src/main.o 
@@ -176,6 +178,7 @@ CPP_DEPS += \
 ./src/StabIntervals.d \
 ./src/SubArraySort.d \
 ./src/SurroundedGroups.d \
+./src/Trie.d \
 ./src/TripletSum.d \
 ./src/WordBreak.d \
 ./src/main.d 
