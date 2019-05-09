@@ -57,6 +57,7 @@ CPP_SRCS += \
 ../src/SetOfStacks.cpp \
 ../src/SmallestDifference.cpp \
 ../src/StabIntervals.cpp \
+../src/StackBoxes.cpp \
 ../src/SubArraySort.cpp \
 ../src/SurroundedGroups.cpp \
 ../src/Trie.cpp \
@@ -118,6 +119,7 @@ OBJS += \
 ./src/SetOfStacks.o \
 ./src/SmallestDifference.o \
 ./src/StabIntervals.o \
+./src/StackBoxes.o \
 ./src/SubArraySort.o \
 ./src/SurroundedGroups.o \
 ./src/Trie.o \
@@ -179,6 +181,7 @@ CPP_DEPS += \
 ./src/SetOfStacks.d \
 ./src/SmallestDifference.d \
 ./src/StabIntervals.d \
+./src/StackBoxes.d \
 ./src/SubArraySort.d \
 ./src/SurroundedGroups.d \
 ./src/Trie.d \

@@ -13,7 +13,7 @@ src/main.o: ../src/main.cpp ../src/LongestSubStringOfKUnique.h \
   ../src/FourNumberSum.h ../src/MaxIncreasingSubsequenceSum.h \
   ../src/RiverSizes.h ../src/PaintFill.h ../src/CollatzSequence.h \
   ../src/BT_BottomView.h ../src/PrintCombs.h ../src/AlienLanguage.h \
-  ../src/Graph.h ../src/BoggleSolver.h ../src/Trie.h
+  ../src/Graph.h ../src/BoggleSolver.h ../src/Trie.h ../src/StackBoxes.h
 
 ../src/LongestSubStringOfKUnique.h:
 
@@ -96,3 +96,5 @@ src/main.o: ../src/main.cpp ../src/LongestSubStringOfKUnique.h \
 ../src/BoggleSolver.h:
 
 ../src/Trie.h:
+
+../src/StackBoxes.h:

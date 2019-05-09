@@ -49,11 +49,55 @@
 #include "PrintCombs.h"
 #include "AlienLanguage.h"
 #include "BoggleSolver.h"
+#include "StackBoxes.h"
 
 
 int main(){
 
-	//Boggle Solver
+	std::vector<int> box;
+	std::vector<std::vector<int> > boxes;
+
+	box.push_back(2);
+	box.push_back(1);
+	box.push_back(2);
+	boxes.push_back(box);
+
+	box[0] = 4;
+	box[1] = 4;
+	box[2] = 5;
+	boxes.push_back(box);
+
+	box[0] = 3;
+	box[1] = 2;
+	box[2] = 3;
+	boxes.push_back(box);
+
+	box[0] = 2;
+	box[1] = 2;
+	box[2] = 8;
+	boxes.push_back(box);
+
+	box[0] = 2;
+	box[1] = 3;
+	box[2] = 4;
+	boxes.push_back(box);
+
+	box[0] = 1;
+	box[1] = 2;
+	box[2] = 1;
+	boxes.push_back(box);
+
+	boxes = boxStacking(boxes);
+
+	for(int i = 0; i < boxes.size(); ++i){
+		for(int j = 0; j < boxes[0].size(); ++j){
+			std::cout << boxes[i][j] << " ";
+		}
+		std::cout << " , ";
+	}
+
+
+	/*//Boggle Solver
 	std::vector<char> temp;
 	std::vector<std::vector<char> > board;
 	temp.push_back('y');
@@ -121,23 +165,11 @@ int main(){
 	dict.push_back("epual");
 	dict.push_back("dangerous");
 
-
-	/*for(int i = 0; i < board.size(); ++i){
-		for( int j = 0; j < board[0].size(); ++j){
-			std::cout << board[i][j] << ", ";
-		}
-		std::cout << "\n";
-	}
-	for(int i = 0; i < dict.size(); ++i){
-		std::cout << dict[i] << ", ";
-	}*/
-
 	std::unordered_set<std::string> result = boggleSolver(board, dict);
 
 	for(std::unordered_set<std::string>::iterator it = result.begin(); it != result.end(); ++it){
 		std::cout << *it << ", ";
-	}
-
+	}*/
 
 
 
