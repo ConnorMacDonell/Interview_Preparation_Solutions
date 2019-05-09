@@ -11,8 +11,8 @@ void Trie::insert(std::string word){
 	int i = 0;
 	Trie* curr = this;
 	while(curr -> children.find(word[i]) != curr -> children.end()){
-		++i;
 		curr = curr -> children[word[i]];
+		++i;
 	}
 	while(i < word.size()){
 		Trie* node = new Trie;

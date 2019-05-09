@@ -7,6 +7,7 @@
 
 #include <unordered_map>
 #include <string>
+#include <iostream>
 
 #ifndef TRIE_H_
 #define TRIE_H_
@@ -15,7 +16,6 @@ class Trie{
 public:
 	void insert(std::string word);
 	bool inTrie(std::string word);
-private:
 	bool isWord;
 	std::unordered_map<char, Trie*> children;
 };

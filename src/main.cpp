@@ -48,23 +48,96 @@
 #include "BT_BottomView.h"
 #include "PrintCombs.h"
 #include "AlienLanguage.h"
+#include "BoggleSolver.h"
 
 
 int main(){
 
-	//Alien Language Test Case
+	//Boggle Solver
+	std::vector<char> temp;
+	std::vector<std::vector<char> > board;
+	temp.push_back('y');
+	temp.push_back('g');
+	temp.push_back('f');
+	temp.push_back('y');
+	temp.push_back('e');
+	temp.push_back('i');
+	board.push_back(temp);
+	temp[0] = 'c';
+	temp[1] = 'o';
+	temp[2] = 'r';
+	temp[3] = 'p';
+	temp[4] = 'o';
+	temp[5] = 'u';
+	board.push_back(temp);
+	temp[0] = 'j';
+	temp[1] = 'u';
+	temp[2] = 'z';
+	temp[3] = 's';
+	temp[4] = 'e';
+	temp[5] = 'l';
+	board.push_back(temp);
+	temp[0] = 's';
+	temp[1] = 'y';
+	temp[2] = 'u';
+	temp[3] = 'r';
+	temp[4] = 'h';
+	temp[5] = 'p';
+	board.push_back(temp);
+	temp[0] = 'e';
+	temp[1] = 'a';
+	temp[2] = 'e';
+	temp[3] = 'g';
+	temp[4] = 'n';
+	temp[5] = 'd';
+	board.push_back(temp);
+	temp[0] = 'h';
+	temp[1] = 'e';
+	temp[2] = 'l';
+	temp[3] = 's';
+	temp[4] = 'a';
+	temp[5] = 't';
+	board.push_back(temp);
+
 	std::vector<std::string> dict;
-	dict.push_back("xww");
-	dict.push_back("wxyz");
-	dict.push_back("wxyw");
-	dict.push_back("ywx");
-	dict.push_back("ywz");
+	dict.push_back("san");
+	dict.push_back("sana");
+	dict.push_back("at");
+	dict.push_back("vomit");
+	dict.push_back("yours");
+	dict.push_back("help");
+	dict.push_back("end");
+	dict.push_back("been");
+	dict.push_back("bed");
+	dict.push_back("danger");
+	dict.push_back("calm");
+	dict.push_back("ok");
+	dict.push_back("chaos");
+	dict.push_back("complete");
+	dict.push_back("rear");
+	dict.push_back("going");
+	dict.push_back("storm");
+	dict.push_back("face");
+	dict.push_back("epual");
+	dict.push_back("dangerous");
 
-	std::vector<std::pair<char, char> > rules = makeRules(dict);
 
-	for(int i = 0; i < rules.size(); ++i){
-		std::cout << rules[i].first << ", " << rules[i].second << std::endl;
+	/*for(int i = 0; i < board.size(); ++i){
+		for( int j = 0; j < board[0].size(); ++j){
+			std::cout << board[i][j] << ", ";
+		}
+		std::cout << "\n";
 	}
+	for(int i = 0; i < dict.size(); ++i){
+		std::cout << dict[i] << ", ";
+	}*/
+
+	std::unordered_set<std::string> result = boggleSolver(board, dict);
+
+	for(std::unordered_set<std::string>::iterator it = result.begin(); it != result.end(); ++it){
+		std::cout << *it << ", ";
+	}
+
 
 
 
