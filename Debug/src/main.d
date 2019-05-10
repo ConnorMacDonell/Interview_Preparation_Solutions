@@ -14,7 +14,7 @@ src/main.o: ../src/main.cpp ../src/LongestSubStringOfKUnique.h \
   ../src/RiverSizes.h ../src/PaintFill.h ../src/CollatzSequence.h \
   ../src/BT_BottomView.h ../src/PrintCombs.h ../src/AlienLanguage.h \
   ../src/Graph.h ../src/BoggleSolver.h ../src/Trie.h ../src/StackBoxes.h \
-  ../src/BuildLargest.h
+  ../src/BuildLargest.h ../src/SudokuSolver.h
 
 ../src/LongestSubStringOfKUnique.h:
 
@@ -101,3 +101,5 @@ src/main.o: ../src/main.cpp ../src/LongestSubStringOfKUnique.h \
 ../src/StackBoxes.h:
 
 ../src/BuildLargest.h:
+
+../src/SudokuSolver.h:

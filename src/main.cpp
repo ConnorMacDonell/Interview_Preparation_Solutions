@@ -51,11 +51,127 @@
 #include "BoggleSolver.h"
 #include "StackBoxes.h"
 #include "BuildLargest.h"
+#include "SudokuSolver.h"
 
 
 int main(){
 
 
+	/*//Sudoku Solver Test Case
+	std::vector<int> temp;
+	std::vector<std::vector<int> > board;
+	temp.push_back(5);
+	temp.push_back(3);
+	temp.push_back(0);
+	temp.push_back(0);
+	temp.push_back(7);
+	temp.push_back(0);
+	temp.push_back(0);
+	temp.push_back(0);
+	temp.push_back(0);
+	board.push_back(temp);
+	temp.clear();
+
+	temp.push_back(6);
+	temp.push_back(0);
+	temp.push_back(0);
+	temp.push_back(1);
+	temp.push_back(9);
+	temp.push_back(5);
+	temp.push_back(0);
+	temp.push_back(0);
+	temp.push_back(0);
+	board.push_back(temp);
+	temp.clear();
+
+	temp.push_back(0);
+	temp.push_back(9);
+	temp.push_back(8);
+	temp.push_back(0);
+	temp.push_back(0);
+	temp.push_back(0);
+	temp.push_back(0);
+	temp.push_back(6);
+	temp.push_back(0);
+	board.push_back(temp);
+	temp.clear();
+
+	temp.push_back(8);
+	temp.push_back(0);
+	temp.push_back(0);
+	temp.push_back(0);
+	temp.push_back(6);
+	temp.push_back(0);
+	temp.push_back(0);
+	temp.push_back(0);
+	temp.push_back(3);
+	board.push_back(temp);
+	temp.clear();
+
+	temp.push_back(4);
+	temp.push_back(0);
+	temp.push_back(0);
+	temp.push_back(8);
+	temp.push_back(0);
+	temp.push_back(3);
+	temp.push_back(0);
+	temp.push_back(0);
+	temp.push_back(1);
+	board.push_back(temp);
+	temp.clear();
+
+	temp.push_back(7);
+	temp.push_back(0);
+	temp.push_back(0);
+	temp.push_back(0);
+	temp.push_back(2);
+	temp.push_back(0);
+	temp.push_back(0);
+	temp.push_back(0);
+	temp.push_back(6);
+	board.push_back(temp);
+	temp.clear();
+
+	temp.push_back(0);
+	temp.push_back(6);
+	temp.push_back(0);
+	temp.push_back(0);
+	temp.push_back(0);
+	temp.push_back(0);
+	temp.push_back(2);
+	temp.push_back(8);
+	temp.push_back(0);
+	board.push_back(temp);
+	temp.clear();
+
+	temp.push_back(0);
+	temp.push_back(0);
+	temp.push_back(0);
+	temp.push_back(4);
+	temp.push_back(1);
+	temp.push_back(9);
+	temp.push_back(0);
+	temp.push_back(0);
+	temp.push_back(5);
+	board.push_back(temp);
+	temp.clear();
+
+	temp.push_back(0);
+	temp.push_back(0);
+	temp.push_back(0);
+	temp.push_back(0);
+	temp.push_back(8);
+	temp.push_back(0);
+	temp.push_back(0);
+	temp.push_back(7);
+	temp.push_back(9);
+	board.push_back(temp);
+	temp.clear();
+
+	sudokuSolver(board);*/
+
+
+	/*//Build Largest Test Case
 	std::vector<int> input;
 	input.push_back(10);
 	input.push_back(7);
@@ -66,7 +182,7 @@ int main(){
 
 	for(int i = 0; i < input.size(); ++i){
 		std::cout << input[i];
-	}
+	}*/
 
 
 

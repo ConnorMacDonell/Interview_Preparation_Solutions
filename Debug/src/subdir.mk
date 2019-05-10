@@ -60,6 +60,7 @@ CPP_SRCS += \
 ../src/StabIntervals.cpp \
 ../src/StackBoxes.cpp \
 ../src/SubArraySort.cpp \
+../src/SudokuSolver.cpp \
 ../src/SurroundedGroups.cpp \
 ../src/Trie.cpp \
 ../src/TripletSum.cpp \
@@ -123,6 +124,7 @@ OBJS += \
 ./src/StabIntervals.o \
 ./src/StackBoxes.o \
 ./src/SubArraySort.o \
+./src/SudokuSolver.o \
 ./src/SurroundedGroups.o \
 ./src/Trie.o \
 ./src/TripletSum.o \
@@ -186,6 +188,7 @@ CPP_DEPS += \
 ./src/StabIntervals.d \
 ./src/StackBoxes.d \
 ./src/SubArraySort.d \
+./src/SudokuSolver.d \
 ./src/SurroundedGroups.d \
 ./src/Trie.d \
 ./src/TripletSum.d \
