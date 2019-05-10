@@ -50,10 +50,29 @@
 #include "AlienLanguage.h"
 #include "BoggleSolver.h"
 #include "StackBoxes.h"
+#include "BuildLargest.h"
 
 
 int main(){
 
+
+	std::vector<int> input;
+	input.push_back(10);
+	input.push_back(7);
+	input.push_back(76);
+	input.push_back(415);
+
+	input = buildLargest(input);
+
+	for(int i = 0; i < input.size(); ++i){
+		std::cout << input[i];
+	}
+
+
+
+
+
+	/*//StackBoxes Test Case
 	std::vector<int> box;
 	std::vector<std::vector<int> > boxes;
 
@@ -94,7 +113,7 @@ int main(){
 			std::cout << boxes[i][j] << " ";
 		}
 		std::cout << " , ";
-	}
+	}*/
 
 
 	/*//Boggle Solver
