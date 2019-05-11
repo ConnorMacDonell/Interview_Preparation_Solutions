@@ -24,26 +24,26 @@ public:
 	void addEdge(gr_node* node);
 	State getState();
 	void setState(State set);
-	void setValue(int val);
-	int getValue();
+	void setName(char nm);
+	char getName();
 	int getDistance();
 	void setDistance(int dist);
 
 private:
 	std::vector<gr_node*> neighbors;
 	int distance;
-	int value;
+	char name;
 	State state;
 };
 
 class Graph{
 public:
-	void addNode(int value);
-	std::unordered_map<int, gr_node*> getNodes();
+	void addNode(char nm);
+	std::unordered_map<char, gr_node*> getNodes();
 	void resetStates();
 	bool empty();
 private:
-	std::unordered_map<int, gr_node*> nodes;
+	std::unordered_map<char, gr_node*> nodes;
 };
 
 

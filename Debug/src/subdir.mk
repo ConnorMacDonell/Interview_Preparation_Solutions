@@ -4,6 +4,7 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
+../src/AlienLanguage.cpp \
 ../src/ArrayIsRotation.cpp \
 ../src/BT_BottomView.cpp \
 ../src/BT_FreqSubTreeSum.cpp \
@@ -68,6 +69,7 @@ CPP_SRCS += \
 ../src/main.cpp 
 
 OBJS += \
+./src/AlienLanguage.o \
 ./src/ArrayIsRotation.o \
 ./src/BT_BottomView.o \
 ./src/BT_FreqSubTreeSum.o \
@@ -132,6 +134,7 @@ OBJS += \
 ./src/main.o 
 
 CPP_DEPS += \
+./src/AlienLanguage.d \
 ./src/ArrayIsRotation.d \
 ./src/BT_BottomView.d \
 ./src/BT_FreqSubTreeSum.d \

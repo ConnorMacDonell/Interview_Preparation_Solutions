@@ -53,12 +53,31 @@
 #include "SudokuSolver.h"
 #include "LL_Split.h"
 #include "SnakesAndLadders.h"
+#include "AlienLanguage.h"
 
 
 int main(){
 
 
-	//Snakes and Ladders Test Case
+	//Alien Language Test Case
+
+	std::vector<std::string> dict;
+	dict.push_back("xww");
+	dict.push_back("wxyz");
+	dict.push_back("wxyw");
+	dict.push_back("ywx");
+	dict.push_back("ywz");
+
+
+	std::vector<char> alphabet = orderChars(dict);
+
+	for(int i = 0; i < alphabet.size(); ++i){
+		std::cout << alphabet[i] << ", ";
+	}
+
+
+
+	/*//Snakes and Ladders Test Case
 	std::unordered_map<int, int> snakes;
 	snakes[16] = 6;
 	snakes[48] = 26;
@@ -84,7 +103,7 @@ int main(){
 
 	int dist = snakesAndLadders(snakes, ladders);
 
-	std::cout << "Min turns: " << dist << std::endl;
+	std::cout << "Min turns: " << dist << std::endl;*/
 
 
 

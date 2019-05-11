@@ -23,12 +23,12 @@ void gr_node::setState(enum State set){
 	state = set;
 }
 
-void gr_node::setValue(int val){
-	value = val;
+void gr_node::setName(char nm){
+	name = nm;
 }
 
-int gr_node::getValue(){
-	return value;
+char gr_node::getName(){
+	return name;
 }
 
 int gr_node::getDistance(){
@@ -41,22 +41,21 @@ void gr_node::setDistance(int dist){
 
 
 
-void Graph::addNode(int val){
+void Graph::addNode(char nm){
 	gr_node* node = new gr_node;
-	node -> setValue(val);
+	node -> setName(nm);
 	node -> setState(UNVISITED);
-	node -> setDistance(10000000);
-	nodes[val] = node;
+	nodes[nm] = node;
 }
 
 
-std::unordered_map<int, gr_node*> Graph::getNodes(){
+std::unordered_map<char, gr_node*> Graph::getNodes(){
 	return nodes;
 }
 
 void Graph::resetStates(){
-	for(int i = 0; i < nodes.size(); ++i){
-		nodes[i] -> setState(UNVISITED);
+	for(std::unordered_map<char, gr_node*>::iterator it = nodes.begin(); it != nodes.end(); ++it){
+		it -> second -> setState(UNVISITED);
 	}
 }
 

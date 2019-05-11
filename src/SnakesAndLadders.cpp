@@ -7,7 +7,7 @@
 
 #include "SnakesAndLadders.h"
 
-int snakesAndLadders(std::unordered_map<int, int>& snakes,
+/*int snakesAndLadders(std::unordered_map<int, int>& snakes,
 				std::unordered_map<int, int>& ladders){
 	if(snakes.empty() || ladders.empty()){
 		return -1;
@@ -83,5 +83,5 @@ Graph buildGraphSNL(std::unordered_map<int, int>& snakes,
 
 	return board;
 }
-
+*/
 
