@@ -52,9 +52,40 @@
 #include "StackBoxes.h"
 #include "BuildLargest.h"
 #include "SudokuSolver.h"
+#include "LL_Split.h"
 
 
 int main(){
+
+
+	//LL_Split Test Case
+	ll_node* head = newLLNode(0);
+	head -> next = newLLNode(1);
+	head -> next -> next = newLLNode(2);
+	head -> next -> next -> next = newLLNode(3);
+	head -> next -> next -> next -> next = newLLNode(4);
+	head -> next -> next -> next -> next -> next = newLLNode(5);
+	ll_node* curr = head -> next -> next -> next -> next -> next;
+	curr -> next = newLLNode(6);
+
+	std::pair<ll_node*, ll_node*> evenOdd = splitLL(head);
+
+	ll_node* evenList = evenOdd.first;
+	ll_node* oddList = evenOdd.second;
+
+	std::cout << "Even list: ";
+	while(evenList){
+		std::cout << evenList -> data << " -> ";
+		evenList = evenList -> next;
+	}
+	std::cout << "|" << std::endl;
+
+	std::cout << "Odd list: ";
+	while(oddList){
+		std::cout << oddList -> data << " -> ";
+		oddList = oddList -> next;
+	}
+	std::cout << "|" << std::endl;
 
 
 	/*//Sudoku Solver Test Case
