@@ -12,7 +12,7 @@
 #ifndef GRAPH_H_
 #define GRAPH_H_
 
-	enum state{
+	enum State{
 		UNVISITED,
 		VISITING,
 		VISITED
@@ -20,29 +20,30 @@
 
 class gr_node{
 public:
-	std::vector<gr_node> getNeighbors();
-	void addEdge(gr_node node);
-	std::string getName();
-	state getState();
-	void setState(state set);
+	std::vector<gr_node*> getNeighbors();
+	void addEdge(gr_node* node);
+	State getState();
+	void setState(State set);
 	void setValue(int val);
 	int getValue();
-	gr_node(std::string name);
+	int getDistance();
+	void setDistance(int dist);
+
 private:
-	std::vector<gr_node> neighbors;
-	std::string name;
+	std::vector<gr_node*> neighbors;
+	int distance;
 	int value;
-	state state;
+	State state;
 };
 
 class Graph{
 public:
-	void addNode(gr_node name);
-	std::vector<gr_node> getNodes();
+	void addNode(int value);
+	std::unordered_map<int, gr_node*> getNodes();
 	void resetStates();
 	bool empty();
 private:
-	std::vector<gr_node> nodes;
+	std::unordered_map<int, gr_node*> nodes;
 };
 
 

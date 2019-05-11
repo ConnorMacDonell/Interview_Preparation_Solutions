@@ -4,7 +4,6 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
-../src/AlienLanguage.cpp \
 ../src/ArrayIsRotation.cpp \
 ../src/BT_BottomView.cpp \
 ../src/BT_FreqSubTreeSum.cpp \
@@ -45,7 +44,6 @@ CPP_SRCS += \
 ../src/MinStack.cpp \
 ../src/MinStepsToExit.cpp \
 ../src/MinimumPartitionDifference.cpp \
-../src/MinimumSemesters.cpp \
 ../src/PaintFill.cpp \
 ../src/PowerSet.cpp \
 ../src/PrintCombs.cpp \
@@ -58,6 +56,7 @@ CPP_SRCS += \
 ../src/RotateMatrix.cpp \
 ../src/SetOfStacks.cpp \
 ../src/SmallestDifference.cpp \
+../src/SnakesAndLadders.cpp \
 ../src/StabIntervals.cpp \
 ../src/StackBoxes.cpp \
 ../src/SubArraySort.cpp \
@@ -69,7 +68,6 @@ CPP_SRCS += \
 ../src/main.cpp 
 
 OBJS += \
-./src/AlienLanguage.o \
 ./src/ArrayIsRotation.o \
 ./src/BT_BottomView.o \
 ./src/BT_FreqSubTreeSum.o \
@@ -110,7 +108,6 @@ OBJS += \
 ./src/MinStack.o \
 ./src/MinStepsToExit.o \
 ./src/MinimumPartitionDifference.o \
-./src/MinimumSemesters.o \
 ./src/PaintFill.o \
 ./src/PowerSet.o \
 ./src/PrintCombs.o \
@@ -123,6 +120,7 @@ OBJS += \
 ./src/RotateMatrix.o \
 ./src/SetOfStacks.o \
 ./src/SmallestDifference.o \
+./src/SnakesAndLadders.o \
 ./src/StabIntervals.o \
 ./src/StackBoxes.o \
 ./src/SubArraySort.o \
@@ -134,7 +132,6 @@ OBJS += \
 ./src/main.o 
 
 CPP_DEPS += \
-./src/AlienLanguage.d \
 ./src/ArrayIsRotation.d \
 ./src/BT_BottomView.d \
 ./src/BT_FreqSubTreeSum.d \
@@ -175,7 +172,6 @@ CPP_DEPS += \
 ./src/MinStack.d \
 ./src/MinStepsToExit.d \
 ./src/MinimumPartitionDifference.d \
-./src/MinimumSemesters.d \
 ./src/PaintFill.d \
 ./src/PowerSet.d \
 ./src/PrintCombs.d \
@@ -188,6 +184,7 @@ CPP_DEPS += \
 ./src/RotateMatrix.d \
 ./src/SetOfStacks.d \
 ./src/SmallestDifference.d \
+./src/SnakesAndLadders.d \
 ./src/StabIntervals.d \
 ./src/StackBoxes.d \
 ./src/SubArraySort.d \

@@ -47,18 +47,49 @@
 #include "CollatzSequence.h"
 #include "BT_BottomView.h"
 #include "PrintCombs.h"
-#include "AlienLanguage.h"
 #include "BoggleSolver.h"
 #include "StackBoxes.h"
 #include "BuildLargest.h"
 #include "SudokuSolver.h"
 #include "LL_Split.h"
+#include "SnakesAndLadders.h"
 
 
 int main(){
 
 
-	//LL_Split Test Case
+	//Snakes and Ladders Test Case
+	std::unordered_map<int, int> snakes;
+	snakes[16] = 6;
+	snakes[48] = 26;
+	snakes[49] = 11;
+	snakes[56] = 53;
+	snakes[62] = 19;
+	snakes[64] = 60;
+	snakes[87] = 24;
+	snakes[93] = 73;
+	snakes[95] = 75;
+	snakes[98] = 78;
+
+	std::unordered_map<int, int> ladders;
+	ladders[1] = 38;
+	ladders[4] = 14;
+	ladders[9] = 31;
+	ladders[21] = 42;
+	ladders[28] = 84;
+	ladders[36] = 44;
+	ladders[51] = 67;
+	ladders[71] = 91;
+	ladders[80] = 100;
+
+	int dist = snakesAndLadders(snakes, ladders);
+
+	std::cout << "Min turns: " << dist << std::endl;
+
+
+
+
+	/*//LL_Split Test Case
 	ll_node* head = newLLNode(0);
 	head -> next = newLLNode(1);
 	head -> next -> next = newLLNode(2);
@@ -85,7 +116,7 @@ int main(){
 		std::cout << oddList -> data << " -> ";
 		oddList = oddList -> next;
 	}
-	std::cout << "|" << std::endl;
+	std::cout << "|" << std::endl;*/
 
 
 	/*//Sudoku Solver Test Case

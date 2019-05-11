@@ -7,23 +7,19 @@
 
 #include "Graph.h"
 
-std::vector<gr_node> gr_node::getNeighbors(){
+std::vector<gr_node*> gr_node::getNeighbors(){
 	return neighbors;
 }
 
-void gr_node::addEdge(gr_node node){
+void gr_node::addEdge(gr_node* node){
 	neighbors.push_back(node);
 }
 
-std::string gr_node::getName(){
-	return name;
-}
-
-state gr_node::getState(){
+State gr_node::getState(){
 	return state;
 }
 
-void gr_node::setState(enum state set){
+void gr_node::setState(enum State set){
 	state = set;
 }
 
@@ -35,24 +31,32 @@ int gr_node::getValue(){
 	return value;
 }
 
-gr_node::gr_node(std::string nme) : name(nme), value(0), state(UNVISITED) {
-	std::vector<gr_node> neighbors;
+int gr_node::getDistance(){
+	return distance;
+}
+
+void gr_node::setDistance(int dist){
+	distance = dist;
 }
 
 
 
-void Graph::addNode(gr_node node){
-	nodes.push_back(node);
+void Graph::addNode(int val){
+	gr_node* node = new gr_node;
+	node -> setValue(val);
+	node -> setState(UNVISITED);
+	node -> setDistance(10000000);
+	nodes[val] = node;
 }
 
 
-std::vector<gr_node> Graph::getNodes(){
+std::unordered_map<int, gr_node*> Graph::getNodes(){
 	return nodes;
 }
 
 void Graph::resetStates(){
 	for(int i = 0; i < nodes.size(); ++i){
-		nodes[i].setState(UNVISITED);
+		nodes[i] -> setState(UNVISITED);
 	}
 }
 
