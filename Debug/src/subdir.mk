@@ -44,6 +44,7 @@ CPP_SRCS += \
 ../src/MinRewards.cpp \
 ../src/MinStack.cpp \
 ../src/MinStepsToExit.cpp \
+../src/MinimallyConnected.cpp \
 ../src/MinimumPartitionDifference.cpp \
 ../src/PaintFill.cpp \
 ../src/PowerSet.cpp \
@@ -109,6 +110,7 @@ OBJS += \
 ./src/MinRewards.o \
 ./src/MinStack.o \
 ./src/MinStepsToExit.o \
+./src/MinimallyConnected.o \
 ./src/MinimumPartitionDifference.o \
 ./src/PaintFill.o \
 ./src/PowerSet.o \
@@ -174,6 +176,7 @@ CPP_DEPS += \
 ./src/MinRewards.d \
 ./src/MinStack.d \
 ./src/MinStepsToExit.d \
+./src/MinimallyConnected.d \
 ./src/MinimumPartitionDifference.d \
 ./src/PaintFill.d \
 ./src/PowerSet.d \

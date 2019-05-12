@@ -45,6 +45,7 @@ void Graph::addNode(char nm){
 	gr_node* node = new gr_node;
 	node -> setName(nm);
 	node -> setState(UNVISITED);
+	node -> setDistance(0);
 	nodes[nm] = node;
 }
 
