@@ -23,6 +23,7 @@ CPP_SRCS += \
 ../src/CelebrityParty.cpp \
 ../src/CoinChange.cpp \
 ../src/CollatzSequence.cpp \
+../src/DistinctSubArray.cpp \
 ../src/EightQueens.cpp \
 ../src/FourNumberSum.cpp \
 ../src/Graph.cpp \
@@ -89,6 +90,7 @@ OBJS += \
 ./src/CelebrityParty.o \
 ./src/CoinChange.o \
 ./src/CollatzSequence.o \
+./src/DistinctSubArray.o \
 ./src/EightQueens.o \
 ./src/FourNumberSum.o \
 ./src/Graph.o \
@@ -155,6 +157,7 @@ CPP_DEPS += \
 ./src/CelebrityParty.d \
 ./src/CoinChange.d \
 ./src/CollatzSequence.d \
+./src/DistinctSubArray.d \
 ./src/EightQueens.d \
 ./src/FourNumberSum.d \
 ./src/Graph.d \

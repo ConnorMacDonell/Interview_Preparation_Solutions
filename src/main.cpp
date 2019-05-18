@@ -54,12 +54,27 @@
 #include "LL_Split.h"
 #include "SnakesAndLadders.h"
 #include "AlienLanguage.h"
+#include "DistinctSubArray.h"
 
 
 int main(){
 
 
-	//Alien Language Test Case
+	std::vector<int> input;
+	input.push_back(5);
+	input.push_back(1);
+	input.push_back(3);
+	input.push_back(3);
+	input.push_back(2);
+	input.push_back(7);
+	input.push_back(4);
+	input.push_back(10);
+
+	int result = longestDistinct(input);
+
+	std::cout << result << std::endl;
+
+	/*//Alien Language Test Case
 
 	std::vector<std::string> dict;
 	dict.push_back("xww");
@@ -73,7 +88,7 @@ int main(){
 
 	for(int i = 0; i < alphabet.size(); ++i){
 		std::cout << alphabet[i] << ", ";
-	}
+	}*/
 
 
 
