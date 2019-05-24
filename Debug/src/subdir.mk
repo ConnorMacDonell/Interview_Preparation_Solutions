@@ -47,6 +47,7 @@ CPP_SRCS += \
 ../src/MinStepsToExit.cpp \
 ../src/MinimallyConnected.cpp \
 ../src/MinimumPartitionDifference.cpp \
+../src/NewSubscribers.cpp \
 ../src/PaintFill.cpp \
 ../src/PowerSet.cpp \
 ../src/PrintCombs.cpp \
@@ -114,6 +115,7 @@ OBJS += \
 ./src/MinStepsToExit.o \
 ./src/MinimallyConnected.o \
 ./src/MinimumPartitionDifference.o \
+./src/NewSubscribers.o \
 ./src/PaintFill.o \
 ./src/PowerSet.o \
 ./src/PrintCombs.o \
@@ -181,6 +183,7 @@ CPP_DEPS += \
 ./src/MinStepsToExit.d \
 ./src/MinimallyConnected.d \
 ./src/MinimumPartitionDifference.d \
+./src/NewSubscribers.d \
 ./src/PaintFill.d \
 ./src/PowerSet.d \
 ./src/PrintCombs.d \

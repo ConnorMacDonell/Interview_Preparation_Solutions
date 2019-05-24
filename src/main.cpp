@@ -60,6 +60,9 @@
 int main(){
 
 
+
+
+	/*//Longest Distinct Test Case
 	std::vector<int> input;
 	input.push_back(5);
 	input.push_back(1);
@@ -72,7 +75,7 @@ int main(){
 
 	int result = longestDistinct(input);
 
-	std::cout << result << std::endl;
+	std::cout << result << std::endl;*/
 
 	/*//Alien Language Test Case
 
