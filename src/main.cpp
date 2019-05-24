@@ -55,9 +55,25 @@
 #include "SnakesAndLadders.h"
 #include "AlienLanguage.h"
 #include "DistinctSubArray.h"
+#include "LL_ReverseKGroup.h"
 
 
 int main(){
+
+	//LL_ReverseKGroup Test Case
+	ListNode* head = new ListNode(1);
+	head -> next = new ListNode(2);
+	ListNode* curr = head -> next;
+	for(int i = 3; i < 11; ++i){
+		curr -> next = new ListNode(i);
+		curr = curr -> next;
+	}
+	curr = reverseKGroup(head, 5);
+	for(int i = 1; i < 11; ++i){
+		std::cout << curr -> data << " -> ";
+		curr = curr -> next;
+	}
+	std::cout << std::endl;
 
 
 

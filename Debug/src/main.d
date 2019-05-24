@@ -15,7 +15,8 @@ src/main.o: ../src/main.cpp ../src/LongestSubStringOfKUnique.h \
   ../src/BT_BottomView.h ../src/PrintCombs.h ../src/BoggleSolver.h \
   ../src/Trie.h ../src/StackBoxes.h ../src/BuildLargest.h \
   ../src/SudokuSolver.h ../src/LL_Split.h ../src/SnakesAndLadders.h \
-  ../src/Graph.h ../src/AlienLanguage.h ../src/DistinctSubArray.h
+  ../src/Graph.h ../src/AlienLanguage.h ../src/DistinctSubArray.h \
+  ../src/LL_ReverseKGroup.h
 
 ../src/LongestSubStringOfKUnique.h:
 
@@ -110,3 +111,5 @@ src/main.o: ../src/main.cpp ../src/LongestSubStringOfKUnique.h \
 ../src/AlienLanguage.h:
 
 ../src/DistinctSubArray.h:
+
+../src/LL_ReverseKGroup.h:

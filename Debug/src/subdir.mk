@@ -34,6 +34,7 @@ CPP_SRCS += \
 ../src/LL_IsPalindrome.cpp \
 ../src/LL_LoopDetection.cpp \
 ../src/LL_Pivot.cpp \
+../src/LL_ReverseKGroup.cpp \
 ../src/LL_Split.cpp \
 ../src/LargestRange.cpp \
 ../src/LinkedList.cpp \
@@ -102,6 +103,7 @@ OBJS += \
 ./src/LL_IsPalindrome.o \
 ./src/LL_LoopDetection.o \
 ./src/LL_Pivot.o \
+./src/LL_ReverseKGroup.o \
 ./src/LL_Split.o \
 ./src/LargestRange.o \
 ./src/LinkedList.o \
@@ -170,6 +172,7 @@ CPP_DEPS += \
 ./src/LL_IsPalindrome.d \
 ./src/LL_LoopDetection.d \
 ./src/LL_Pivot.d \
+./src/LL_ReverseKGroup.d \
 ./src/LL_Split.d \
 ./src/LargestRange.d \
 ./src/LinkedList.d \
