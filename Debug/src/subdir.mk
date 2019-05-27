@@ -27,7 +27,9 @@ CPP_SRCS += \
 ../src/EightQueens.cpp \
 ../src/FourNumberSum.cpp \
 ../src/Graph.cpp \
+../src/InsertInterval.cpp \
 ../src/JumpingNumbers.cpp \
+../src/JumpsToEnd.cpp \
 ../src/KnapsackProblem.cpp \
 ../src/LL_Add.cpp \
 ../src/LL_Intersection.cpp \
@@ -96,7 +98,9 @@ OBJS += \
 ./src/EightQueens.o \
 ./src/FourNumberSum.o \
 ./src/Graph.o \
+./src/InsertInterval.o \
 ./src/JumpingNumbers.o \
+./src/JumpsToEnd.o \
 ./src/KnapsackProblem.o \
 ./src/LL_Add.o \
 ./src/LL_Intersection.o \
@@ -165,7 +169,9 @@ CPP_DEPS += \
 ./src/EightQueens.d \
 ./src/FourNumberSum.d \
 ./src/Graph.d \
+./src/InsertInterval.d \
 ./src/JumpingNumbers.d \
+./src/JumpsToEnd.d \
 ./src/KnapsackProblem.d \
 ./src/LL_Add.d \
 ./src/LL_Intersection.d \

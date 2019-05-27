@@ -56,11 +56,45 @@
 #include "AlienLanguage.h"
 #include "DistinctSubArray.h"
 #include "LL_ReverseKGroup.h"
+#include "JumpsToEnd.h"
+#include "InsertInterval.h"
 
 
 int main(){
 
-	//LL_ReverseKGroup Test Case
+
+	//InsertInterval Test Case
+	std::vector<std::pair<int, int> > intervals;
+	intervals.push_back(std::make_pair(1, 2));
+	intervals.push_back(std::make_pair(3, 5));
+	intervals.push_back(std::make_pair(6, 7));
+	intervals.push_back(std::make_pair(8, 10));
+	intervals.push_back(std::make_pair(12, 16));
+	std::pair<int, int> toInsert = std::make_pair(4, 8);
+
+	intervals = insertInterval(intervals, toInsert);
+
+	for(int i = 0; i < intervals.size(); ++i){
+		std::cout << "[" << intervals[i].first << ", " << intervals[i].second << "], ";
+	}
+	std::cout << std::endl;
+
+
+	/*//JumpsToEnd Test Case
+	std::vector<int> input;
+	input.push_back(3);
+	input.push_back(2);
+	input.push_back(1);
+	input.push_back(0);
+	input.push_back(4);
+
+	int result = minJumpsToEnd(input);
+
+	std::cout << result << std::endl;*/
+
+
+
+	/*//LL_ReverseKGroup Test Case
 	ListNode* head = new ListNode(1);
 	head -> next = new ListNode(2);
 	ListNode* curr = head -> next;
@@ -73,7 +107,7 @@ int main(){
 		std::cout << curr -> data << " -> ";
 		curr = curr -> next;
 	}
-	std::cout << std::endl;
+	std::cout << std::endl;*/
 
 
 
