@@ -24,4 +24,15 @@ void destroyTree(bt_node* root){
 	delete root;
 }
 
+void printInOrder(bt_node* root){
+    if(!root){
+    	std::cout << '#' << " ";
+        return;
+    }
+    printInOrder(root -> leftChild);
+    std::cout << root -> data << " ";
+    printInOrder(root -> rightChild);
+}
+
+
 

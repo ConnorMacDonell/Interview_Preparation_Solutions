@@ -10,60 +10,104 @@
 #include <algorithm>
 #include <cmath>
 
-#include "LongestSubStringOfKUnique.h"
-#include "BinaryStringPrinter.h"
-#include "BT_Node.h"
-#include "BT_FreqSubTreeSum.h"
-#include "BT_SerializeVect.h"
-#include "BT_SumPaths.h"
-#include "JumpingNumbers.h"
-#include "MinStack.h"
-#include "PrintWords.h"
-#include "CoinChange.h"
-#include "LinkedList.h"
-#include "LL_Pivot.h"
-#include "LL_Pivot.h"
-#include "LL_Add.h"
-#include "LL_isPalindrome.h"
-#include "MergeIntervals.h"
-#include "MinimumPartitionDifference.h"
-#include "MergeSort.h"
-#include "PowerSet.h"
-#include "RecursiveMultiply.h"
-#include "PrintPerms.h"
-#include "PrintParenPairs.h"
-#include "EightQueens.h"
-#include "WordBreak.h"
-#include "LL_LoopDetection.h"
-#include "ArrayIsRotation.h"
-#include "RotateMatrix.h"
-#include "MinStepsToExit.h"
-#include "TripletSum.h"
-#include "SmallestDifference.h"
-#include "QuickSelect.h"
-#include "FourNumberSum.h"
-#include "MaxIncreasingSubsequenceSum.h"
-#include "RiverSizes.h"
-#include "CollatzSequence.h"
-#include "BT_BottomView.h"
-#include "PrintCombs.h"
-#include "BoggleSolver.h"
-#include "StackBoxes.h"
-#include "BuildLargest.h"
-#include "SudokuSolver.h"
-#include "LL_Split.h"
-#include "SnakesAndLadders.h"
-#include "AlienLanguage.h"
-#include "DistinctSubArray.h"
-#include "LL_ReverseKGroup.h"
-#include "JumpsToEnd.h"
-#include "InsertInterval.h"
+#include "Headers.h"
 
 
 int main(){
 
+	/*//ScrambledSequence Test Case
+	std::vector<char> input;
+	input.push_back('n');
+	input.push_back('+');
+	input.push_back('+');
+	input.push_back('-');
+	input.push_back('+');
+	input.push_back('-');
+	input.push_back('-');
+	input.push_back('-');
+	input.push_back('+');
 
-	//InsertInterval Test Case
+	std::vector<int> sequence = scrambledSequence(input);
+
+	for(int i = 0; i < sequence.size(); ++i){
+		std::cout << sequence[i] << " ";
+	}
+	std::cout << std::endl;*/
+
+	/*//BT_Trim Test Case
+
+	bt_node* root = makeNode(0);
+	root -> leftChild = makeNode(1);
+	root -> leftChild -> leftChild = makeNode(3);
+	root -> leftChild -> leftChild -> rightChild = makeNode(5);
+	root -> rightChild = makeNode(2);
+	root -> rightChild -> rightChild = makeNode(4);
+	root -> rightChild -> rightChild -> rightChild = makeNode(7);
+	root -> rightChild -> rightChild -> leftChild = makeNode(6);
+
+	printInOrder(root);
+	std::cout << std::endl;
+
+	trimBT(root);
+
+	printInOrder(root);*/
+
+
+
+
+	/*//LotsOfZeroes Test Case
+	std::vector<std::vector<int> > matrix;
+	std::vector<int> temp;
+	temp.push_back(1);
+	temp.push_back(0);
+	temp.push_back(1);
+	temp.push_back(1);
+	temp.push_back(1);
+	matrix.push_back(temp);
+
+	temp[0] = 1;
+	temp[1] = 1;
+	temp[2] = 0;
+	temp[3] = 1;
+	temp[4] = 1;
+	matrix.push_back(temp);
+
+	temp[0] = 1;
+	temp[1] = 1;
+	temp[2] = 1;
+	temp[3] = 1;
+	temp[4] = 1;
+	matrix.push_back(temp);
+
+	temp[0] = 1;
+	temp[1] = 1;
+	temp[2] = 1;
+	temp[3] = 1;
+	temp[4] = 1;
+	matrix.push_back(temp);
+
+	temp[0] = 1;
+	temp[1] = 1;
+	temp[2] = 1;
+	temp[3] = 1;
+	temp[4] = 1;
+	matrix.push_back(temp);
+
+	printMatrix(matrix);
+
+	lotsOfZeroes(matrix);
+
+	std::cout << std::endl;
+
+	printMatrix(matrix);*/
+
+
+
+
+
+
+
+	/*//InsertInterval Test Case
 	std::vector<std::pair<int, int> > intervals;
 	intervals.push_back(std::make_pair(1, 2));
 	intervals.push_back(std::make_pair(3, 5));
@@ -77,7 +121,7 @@ int main(){
 	for(int i = 0; i < intervals.size(); ++i){
 		std::cout << "[" << intervals[i].first << ", " << intervals[i].second << "], ";
 	}
-	std::cout << std::endl;
+	std::cout << std::endl;*/
 
 
 	/*//JumpsToEnd Test Case

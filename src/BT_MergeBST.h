@@ -20,11 +20,9 @@
 #ifndef BT_MERGEBST_H_
 #define BT_MERGEBST_H_
 
-void mergeBST(bst_node* root1, bst_node* root2);
+void mergeBST(bt_node* root1, bt_node* root2);
 
-void buildLeftStack(bst_node* node, std::stack<bst_node*>& stack);
-
-void printInOrder(bst_node* root);
+void buildLeftStack(bt_node* node, std::stack<bt_node*>& stack);
 
 
 

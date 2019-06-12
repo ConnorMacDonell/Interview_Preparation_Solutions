@@ -16,6 +16,7 @@ CPP_SRCS += \
 ../src/BT_Node.cpp \
 ../src/BT_SerializeVect.cpp \
 ../src/BT_SumPaths.cpp \
+../src/BT_Trim.cpp \
 ../src/BT_UnivalTree.cpp \
 ../src/BinaryStringPrinter.cpp \
 ../src/BoggleSolver.cpp \
@@ -25,6 +26,7 @@ CPP_SRCS += \
 ../src/CollatzSequence.cpp \
 ../src/DistinctSubArray.cpp \
 ../src/EightQueens.cpp \
+../src/FizzBuzz.cpp \
 ../src/FourNumberSum.cpp \
 ../src/Graph.cpp \
 ../src/InsertInterval.cpp \
@@ -41,6 +43,7 @@ CPP_SRCS += \
 ../src/LargestRange.cpp \
 ../src/LinkedList.cpp \
 ../src/LongestSubStringOfKUnique.cpp \
+../src/LotsOfZeroes.cpp \
 ../src/MaxIncreasingSubsequenceSum.cpp \
 ../src/MaxProfitKTransactions.cpp \
 ../src/MergeIntervals.cpp \
@@ -61,6 +64,7 @@ CPP_SRCS += \
 ../src/RecursiveMultiply.cpp \
 ../src/RiverSizes.cpp \
 ../src/RotateMatrix.cpp \
+../src/ScrambledSequence.cpp \
 ../src/SetOfStacks.cpp \
 ../src/SmallestDifference.cpp \
 ../src/SnakesAndLadders.cpp \
@@ -87,6 +91,7 @@ OBJS += \
 ./src/BT_Node.o \
 ./src/BT_SerializeVect.o \
 ./src/BT_SumPaths.o \
+./src/BT_Trim.o \
 ./src/BT_UnivalTree.o \
 ./src/BinaryStringPrinter.o \
 ./src/BoggleSolver.o \
@@ -96,6 +101,7 @@ OBJS += \
 ./src/CollatzSequence.o \
 ./src/DistinctSubArray.o \
 ./src/EightQueens.o \
+./src/FizzBuzz.o \
 ./src/FourNumberSum.o \
 ./src/Graph.o \
 ./src/InsertInterval.o \
@@ -112,6 +118,7 @@ OBJS += \
 ./src/LargestRange.o \
 ./src/LinkedList.o \
 ./src/LongestSubStringOfKUnique.o \
+./src/LotsOfZeroes.o \
 ./src/MaxIncreasingSubsequenceSum.o \
 ./src/MaxProfitKTransactions.o \
 ./src/MergeIntervals.o \
@@ -132,6 +139,7 @@ OBJS += \
 ./src/RecursiveMultiply.o \
 ./src/RiverSizes.o \
 ./src/RotateMatrix.o \
+./src/ScrambledSequence.o \
 ./src/SetOfStacks.o \
 ./src/SmallestDifference.o \
 ./src/SnakesAndLadders.o \
@@ -158,6 +166,7 @@ CPP_DEPS += \
 ./src/BT_Node.d \
 ./src/BT_SerializeVect.d \
 ./src/BT_SumPaths.d \
+./src/BT_Trim.d \
 ./src/BT_UnivalTree.d \
 ./src/BinaryStringPrinter.d \
 ./src/BoggleSolver.d \
@@ -167,6 +176,7 @@ CPP_DEPS += \
 ./src/CollatzSequence.d \
 ./src/DistinctSubArray.d \
 ./src/EightQueens.d \
+./src/FizzBuzz.d \
 ./src/FourNumberSum.d \
 ./src/Graph.d \
 ./src/InsertInterval.d \
@@ -183,6 +193,7 @@ CPP_DEPS += \
 ./src/LargestRange.d \
 ./src/LinkedList.d \
 ./src/LongestSubStringOfKUnique.d \
+./src/LotsOfZeroes.d \
 ./src/MaxIncreasingSubsequenceSum.d \
 ./src/MaxProfitKTransactions.d \
 ./src/MergeIntervals.d \
@@ -203,6 +214,7 @@ CPP_DEPS += \
 ./src/RecursiveMultiply.d \
 ./src/RiverSizes.d \
 ./src/RotateMatrix.d \
+./src/ScrambledSequence.d \
 ./src/SetOfStacks.d \
 ./src/SmallestDifference.d \
 ./src/SnakesAndLadders.d \

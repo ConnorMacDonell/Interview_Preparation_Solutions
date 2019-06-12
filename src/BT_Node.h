@@ -19,15 +19,11 @@ struct bt_node{
 	int data;
 };
 
-struct bst_node{
-	bst_node* left;
-	bst_node* right;
-	int data;
-};
-
 bt_node* makeNode(int n);
 
 void destroyTree(bt_node* root);
+
+void printInOrder(bt_node* root);
 
 
 

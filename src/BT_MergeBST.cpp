@@ -6,8 +6,9 @@
  */
 
 #include "BT_MergeBST.h"
+#include "BT_Node.h"
 
-void mergeBST(bst_node* root1, bst_node* root2){
+void mergeBST(bt_node* root1, bt_node* root2){
     if(!root1 && !root2){
         return;
     }
@@ -17,12 +18,12 @@ void mergeBST(bst_node* root1, bst_node* root2){
     if(!root2){
         printInOrder(root1);
     }
-    std::stack<bst_node*> treeOneStack;
+    std::stack<bt_node*> treeOneStack;
     buildLeftStack(root1, treeOneStack);
-    std::stack<bst_node*> treeTwoStack;
+    std::stack<bt_node*> treeTwoStack;
     buildLeftStack(root2, treeTwoStack);
-    bst_node* treeOneCurr;
-    bst_node* treeTwoCurr;
+    bt_node* treeOneCurr;
+    bt_node* treeTwoCurr;
 
     while(!treeOneStack.empty() && !treeTwoStack.empty()){
 
@@ -33,16 +34,16 @@ void mergeBST(bst_node* root1, bst_node* root2){
             std::cout << treeOneCurr -> data << " ";
             treeOneStack.pop();
 
-            if(treeOneCurr -> right){
-                buildLeftStack(treeOneCurr -> right, treeOneStack);
+            if(treeOneCurr -> rightChild){
+                buildLeftStack(treeOneCurr -> rightChild, treeOneStack);
             }
         }
         else{
             std::cout << treeTwoCurr -> data << " ";
             treeTwoStack.pop();
 
-            if(treeTwoCurr -> right){
-                buildLeftStack(treeTwoCurr -> right, treeTwoStack);
+            if(treeTwoCurr -> rightChild){
+                buildLeftStack(treeTwoCurr -> rightChild, treeTwoStack);
             }
         }
     }
@@ -51,15 +52,15 @@ void mergeBST(bst_node* root1, bst_node* root2){
         treeOneCurr = treeOneStack.top();
         treeOneStack.pop();
         std::cout << treeOneCurr -> data << " ";
-        if(treeOneCurr -> right){
-            buildLeftStack(treeOneCurr -> right, treeOneStack);
+        if(treeOneCurr -> rightChild){
+            buildLeftStack(treeOneCurr -> rightChild, treeOneStack);
         }
     }
     while(!treeTwoStack.empty()){
         treeTwoCurr = treeTwoStack.top();
         std::cout << treeTwoCurr -> data << " ";
         treeTwoStack.pop();
-        if(treeTwoCurr -> right){
+        if(treeTwoCurr -> rightChild){
             buildLeftStack(treeTwoCurr, treeTwoStack);
         }
     }
@@ -67,26 +68,16 @@ void mergeBST(bst_node* root1, bst_node* root2){
     delete treeTwoCurr;
 }
 
-void buildLeftStack(bst_node* node, std::stack<bst_node*>& stack){
+void buildLeftStack(bt_node* node, std::stack<bt_node*>& stack){
     if(!node){
         return;
     }
-    bst_node* temp = node;
+    bt_node* temp = node;
     while(temp){
         stack.push(temp);
-        temp = temp -> left;
+        temp = temp -> leftChild;
     }
     delete temp;
 }
-
-void printInOrder(bst_node* root){
-    if(!root){
-        return;
-    }
-    printInOrder(root -> left);
-    std::cout << root -> data << " ";
-    printInOrder(root -> right);
-}
-
 
 
