@@ -4,6 +4,7 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
+../src/AdjacentWords.cpp \
 ../src/AlienLanguage.cpp \
 ../src/ArrayIsRotation.cpp \
 ../src/BT_BottomView.cpp \
@@ -29,6 +30,7 @@ CPP_SRCS += \
 ../src/FizzBuzz.cpp \
 ../src/FourNumberSum.cpp \
 ../src/Graph.cpp \
+../src/InCheck.cpp \
 ../src/InsertInterval.cpp \
 ../src/JumpingNumbers.cpp \
 ../src/JumpsToEnd.cpp \
@@ -79,6 +81,7 @@ CPP_SRCS += \
 ../src/main.cpp 
 
 OBJS += \
+./src/AdjacentWords.o \
 ./src/AlienLanguage.o \
 ./src/ArrayIsRotation.o \
 ./src/BT_BottomView.o \
@@ -104,6 +107,7 @@ OBJS += \
 ./src/FizzBuzz.o \
 ./src/FourNumberSum.o \
 ./src/Graph.o \
+./src/InCheck.o \
 ./src/InsertInterval.o \
 ./src/JumpingNumbers.o \
 ./src/JumpsToEnd.o \
@@ -154,6 +158,7 @@ OBJS += \
 ./src/main.o 
 
 CPP_DEPS += \
+./src/AdjacentWords.d \
 ./src/AlienLanguage.d \
 ./src/ArrayIsRotation.d \
 ./src/BT_BottomView.d \
@@ -179,6 +184,7 @@ CPP_DEPS += \
 ./src/FizzBuzz.d \
 ./src/FourNumberSum.d \
 ./src/Graph.d \
+./src/InCheck.d \
 ./src/InsertInterval.d \
 ./src/JumpingNumbers.d \
 ./src/JumpsToEnd.d \

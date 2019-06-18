@@ -18,7 +18,7 @@ src/main.o: ../src/main.cpp ../src/Headers.h \
   ../src/Graph.h ../src/AlienLanguage.h ../src/DistinctSubArray.h \
   ../src/LL_ReverseKGroup.h ../src/JumpsToEnd.h ../src/InsertInterval.h \
   ../src/LotsOfZeroes.h ../src/FizzBuzz.h ../src/BT_Trim.h \
-  ../src/ScrambledSequence.h
+  ../src/ScrambledSequence.h ../src/AdjacentWords.h ../src/InCheck.h
 
 ../src/Headers.h:
 
@@ -129,3 +129,7 @@ src/main.o: ../src/main.cpp ../src/Headers.h \
 ../src/BT_Trim.h:
 
 ../src/ScrambledSequence.h:
+
+../src/AdjacentWords.h:
+
+../src/InCheck.h:

@@ -15,6 +15,118 @@
 
 int main(){
 
+
+	//InCheck Test Case
+	std::vector<std::vector<char> > board;
+	std::vector<char> temp;
+	temp.push_back('-');
+	temp.push_back('-');
+	temp.push_back('-');
+	temp.push_back('-');
+	temp.push_back('-');
+	temp.push_back('-');
+	temp.push_back('-');
+	temp.push_back('-');
+	board.push_back(temp);
+
+	temp[0] = '-';
+	temp[1] = '-';
+	temp[2] = '-';
+	temp[3] = '-';
+	temp[4] = '-';
+	temp[5] = '-';
+	temp[6] = '-';
+	temp[7] = '-';
+	board.push_back(temp);
+
+	temp[0] = '-';
+	temp[1] = 'b';
+	temp[2] = '-';
+	temp[3] = '-';
+	temp[4] = '-';
+	temp[5] = '-';
+	temp[6] = '-';
+	temp[7] = 'k';
+	board.push_back(temp);
+
+	temp[0] = '-';
+	temp[1] = '-';
+	temp[2] = 'n';
+	temp[3] = '-';
+	temp[4] = '-';
+	temp[5] = '-';
+	temp[6] = 'p';
+	temp[7] = '-';
+	board.push_back(temp);
+
+	temp[0] = '-';
+	temp[1] = '-';
+	temp[2] = '-';
+	temp[3] = '-';
+	temp[4] = '-';
+	temp[5] = '-';
+	temp[6] = '-';
+	temp[7] = 'r';
+	board.push_back(temp);
+
+	temp[0] = '-';
+	temp[1] = '-';
+	temp[2] = '-';
+	temp[3] = '-';
+	temp[4] = '-';
+	temp[5] = '-';
+	temp[6] = '-';
+	temp[7] = '-';
+	board.push_back(temp);
+
+	temp[0] = '-';
+	temp[1] = '-';
+	temp[2] = '-';
+	temp[3] = '-';
+	temp[4] = '-';
+	temp[5] = '-';
+	temp[6] = '-';
+	temp[7] = '-';
+	board.push_back(temp);
+
+	temp[0] = '-';
+	temp[1] = '-';
+	temp[2] = '-';
+	temp[3] = '-';
+	temp[4] = '-';
+	temp[5] = 'q';
+	temp[6] = '-';
+	temp[7] = '-';
+	board.push_back(temp);
+
+	for(int i = 0; i < board.size(); ++i){
+		for(int j = 0; j < board[0].size(); ++j){
+			std::cout << board[i][j] << " ";
+		}
+		std::cout << std::endl;
+	}
+
+	std::cout << isInCheck(board) << std::endl;
+
+
+	/*//AdjacentWords Test Case
+	std::vector<std::string> dict;
+	dict.push_back("apple");
+	dict.push_back("applen");
+	dict.push_back("appn");
+	dict.push_back("orange");
+	dict.push_back("appzlep");
+	dict.push_back("papple");
+
+
+	std::string target = "apple";
+
+	std::vector<std::string> result = adjacentWords(dict, target);
+
+	for(int i = 0; i < result.size(); ++i){
+		std::cout << result[i] << ", ";
+	}*/
+
 	/*//ScrambledSequence Test Case
 	std::vector<char> input;
 	input.push_back('n');
@@ -51,8 +163,6 @@ int main(){
 	trimBT(root);
 
 	printInOrder(root);*/
-
-
 
 
 	/*//LotsOfZeroes Test Case
@@ -103,10 +213,6 @@ int main(){
 
 
 
-
-
-
-
 	/*//InsertInterval Test Case
 	std::vector<std::pair<int, int> > intervals;
 	intervals.push_back(std::make_pair(1, 2));
@@ -152,8 +258,6 @@ int main(){
 		curr = curr -> next;
 	}
 	std::cout << std::endl;*/
-
-
 
 
 	/*//Longest Distinct Test Case

@@ -61,6 +61,8 @@
 #include "FizzBuzz.h"
 #include "BT_Trim.h"
 #include "ScrambledSequence.h"
+#include "AdjacentWords.h"
+#include "InCheck.h"
 
 #ifndef HEADERS_H_
 #define HEADERS_H_

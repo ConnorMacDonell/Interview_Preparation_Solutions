@@ -7,47 +7,47 @@
 
 #include "RiverSizes.h"
 
-std::vector<int> riverSizes(std::vector<std::vector<int> > matrix) {
+std::vector<int> riverSizes(const std::vector<std::vector<int> >& matrix) {
 	std::vector<int> results;
 	std::vector<std::vector<bool> > beenVisited;
 	setToFalse(beenVisited, matrix.size(), matrix[0].size());
 
-	for(int row = 0; row < matrix.size(); ++row){
-		for(int col = 0; col < matrix[0].size(); ++col){
-			if(!oob(matrix, row, col) && !beenVisited[row][col] &&
-				 matrix[row][col] == 1){
-				int riverSize = visitRiver(matrix, beenVisited, row, col);
-				results.push_back(riverSize);
+	for(int i = 0; i < matrix.size(); ++i){
+		for(int j = 0; j < matrix[0].size(); ++j){
+			if(matrix[i][j] == 0 && beenVisited[i][j] == false){
+				results.push_back(bfsVisitRiver(matrix, i, j, beenVisited));
 			}
 		}
 	}
 	return results;
 }
 
-int visitRiver(const std::vector<std::vector<int > >& matrix,
-							 std::vector<std::vector<bool> >& beenVisited,
-							 int row, int col){
-	int riverSize = 0;
-	std::queue<std::pair<int, int> > bfsQ;
-	bfsQ.push(std::make_pair(row, col));
+int bfsVisitRiver(const std::vector<std::vector<int> >& matrix, int row, int col,
+		std::vector<std::vector<bool> >& beenVisited){
+	std::queue<std::pair<int, int> > bfsQueue;
 
-	while(!bfsQ.empty()){
-		int currRow = bfsQ.front().first;
-		int currCol = bfsQ.front().second;
-		bfsQ.pop();
-		beenVisited[currRow][currCol] = true;
-		++riverSize;
+	bfsQueue.push(std::make_pair(row, col));
+	int size = 1;
+
+	while(!bfsQueue.empty()){
+		int currRow = bfsQueue.front().first;
+		int currCol = bfsQueue.front().second;
+		bfsQueue.pop();
 		std::vector<std::pair<int, int> > neighbors = getNeighborsNoDiag(currRow, currCol);
-		for(int i = 0; i < 4; ++i){
-			int first = neighbors[i].first;
-			int second = neighbors[i].second;
-			if(!oob(matrix, first, second) && !beenVisited[first][second] &&
-				 matrix[first][second] == 1){
-					 bfsQ.push(neighbors[i]);
+		for(int i = 0; i < neighbors.size(); ++i){
+			int neighbRow = neighbors[i].first;
+			int neighbCol = neighbors[i].second;
+
+			if(!oob(matrix, neighbRow, neighbCol) &&
+					matrix[neighbRow][neighbCol] == 0 &&
+					beenVisited[neighbRow][neighbCol] == 0){
+				beenVisited[neighbRow][neighbCol] = 1;
+				++size;
+				bfsQueue.push(neighbors[i]);
 			}
 		}
 	}
-	return riverSize;
+	return size;
 }
 
 
