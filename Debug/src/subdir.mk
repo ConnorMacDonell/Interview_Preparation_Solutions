@@ -30,6 +30,7 @@ CPP_SRCS += \
 ../src/FizzBuzz.cpp \
 ../src/FourNumberSum.cpp \
 ../src/Graph.cpp \
+../src/GrumpyOwner.cpp \
 ../src/InCheck.cpp \
 ../src/InsertInterval.cpp \
 ../src/JumpingNumbers.cpp \
@@ -107,6 +108,7 @@ OBJS += \
 ./src/FizzBuzz.o \
 ./src/FourNumberSum.o \
 ./src/Graph.o \
+./src/GrumpyOwner.o \
 ./src/InCheck.o \
 ./src/InsertInterval.o \
 ./src/JumpingNumbers.o \
@@ -184,6 +186,7 @@ CPP_DEPS += \
 ./src/FizzBuzz.d \
 ./src/FourNumberSum.d \
 ./src/Graph.d \
+./src/GrumpyOwner.d \
 ./src/InCheck.d \
 ./src/InsertInterval.d \
 ./src/JumpingNumbers.d \

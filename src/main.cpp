@@ -15,8 +15,10 @@
 
 int main(){
 
+	eightQueens();
 
-	//InCheck Test Case
+
+	/*//InCheck Test Case
 	std::vector<std::vector<char> > board;
 	std::vector<char> temp;
 	temp.push_back('-');
@@ -106,7 +108,7 @@ int main(){
 		std::cout << std::endl;
 	}
 
-	std::cout << isInCheck(board) << std::endl;
+	std::cout << isInCheck(board) << std::endl;*/
 
 
 	/*//AdjacentWords Test Case
